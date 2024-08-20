@@ -1,0 +1,14 @@
+{
+  "name": "file-reading",
+  "version": "1.0.0",
+  "description": "In this project i am reading large files in parallel, doing some processing and saving it in db",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rehman AKram",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.5.3"
+  }
+}
