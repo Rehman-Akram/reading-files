@@ -2,13 +2,29 @@
   "name": "file-reading",
   "version": "1.0.0",
   "description": "In this project i am reading large files in parallel, doing some processing and saving it in db",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-dev": "nodemon node app.js"
   },
   "author": "Rehman AKram",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "mongoose": "^8.5.3"
-  }
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.3",
+    "nodemon": "^3.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rehman-Akram/reading-files"
+  },
+  "keywords": [
+    "express",
+    "reading files",
+    "mongoDb"
+  ]
 }
