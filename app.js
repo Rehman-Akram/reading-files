@@ -5,6 +5,9 @@ const {connectDb, disconnectDb } = require("./database")
 //creating express app
 const app = express();
 
+// import routes
+const routes = require('./routes/index.js');
+
 //--------Start applying global middlewares ------
 
 // Using cors middleware allowing all routes.
@@ -14,6 +17,8 @@ app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
+// Forwards the request to the appropriate route
+app.use('/', routes);
 //--------End of applying global middelwares -------
 
 // Connecting db and on sucessful connection of db start server
